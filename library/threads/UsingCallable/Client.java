@@ -30,8 +30,6 @@ public class Client {
         Future<List<Integer>> future2 = executorService.submit(arraySortor);
         List<Integer> list2 = future2.get();
         System.out.println(list2);
-        Node root = new Node(1);
-
         executorService.shutdown();
     }
 }

@@ -23,6 +23,7 @@ public class Client {
 
         TreeSizeCalculator sizeCount= new TreeSizeCalculator(root, executorService);
 
+
         Future<Integer> f1 = executorService.submit(sizeCount);
         System.out.println(f1.get());
 
